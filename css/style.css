@@ -1,0 +1,17 @@
+/* || Font Face */
+
+@font-face {
+  font-family: 'myProductSans';
+  srs: url("./font/ProductSans.woff2") format("woff2"),
+        url("./font/ProductSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'myProductSans';
+  srs: url("./font/ProductSans-Bold.woff2") format("woff2"),
+        url("./font/ProductSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
