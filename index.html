@@ -4,49 +4,54 @@
     <meta charset="utf-8">
     <title>Product Factory</title>
     <link rel="icon" href="./logo.svg">
-    <link rel="stylesheet" href="./css/normailize.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <div class="header-decore">
-      <header class="header">
-        <a href="/" class="logo">
-          <img src="./images/logo-white.svg" alt="Product Factory" width="123" height="52" class="logo__img">
+    <header class="header">
+      <div class="container header__container">
+        <a href="/" class="header__wrap-logo">
+          <img class="header__logo" src="./images/logo-white.svg" alt="Product Factory" width="123" height="52">
         </a>
 
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link">Projects</a></li>
-            <li class="nav__item"><a class="nav__link">Partners</a></li>
-            <li class="nav__item"><a class="nav__link">FAQ</a></li>
-            <li class="nav__item"><a class="nav__link">Masters</a></li>
-            <li class="nav__item"><a class="nav__link">Classes</a></li>
-            <li class="nav__item"><a class="nav__link">Course Experience</a></li>
-            <li class="nav__item"><a class="nav__link">About us</a></li>
+            <li class="nav__item"><a href="/" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="/" class="nav__link">Partners</a></li>
+            <li class="nav__item"><a href="/" class="nav__link">FAQ</a></li>
+            <li class="nav__item"><a href="/" class="nav__link">Masters</a></li>
+            <li class="nav__item"><a href="/" class="nav__link">Classes</a></li>
+            <li class="nav__item"><a href="/" class="nav__link">Course Experience</a></li>
+            <li class="nav__item"><a href="/" class="nav__link">About us</a></li>
           </ul>
         </nav>
 
-        <button class="button button_register">Register</button>
-      </header>
+        <button class="header__button">Register</button>
+      </div>
+    </header>
 
-      <aside class="hero">
-        <section>
-          <hgroup>
-            <h2 class="hero__subtitle">Product Design Course </h2>
-            <h1 class="hero__title">Product Factory</h1>
-          </hgroup>
-          <p class="hero__description">
-            Learn how design thinking, user research,
-          business vision and marketing, and finally designing
-          and creating real digital products for real users.
-          </p>
-          <button class="button">Start Register</button>
-        </section>
-        <figure class="hero__wrap-image">
-          <img class="hero__img" src="./images/hero-decor.png" alt="" width="531" height="570">
-        </figure>
-      </aside>
-    </div>
+    <aside class="intro">
+      <div class="container">
+        <div class="intro__container">
+          <section class="intro__content">
+            <hgroup class="intro__hgroup">
+              <h2 class="intro__subtitle">Product Design Course </h2>
+              <h1 class="intro__title">Product Factory</h1>
+            </hgroup>
+            <p class="intro__description">
+              Learn how design thinking, user research,
+            business vision and marketing, and finally designing
+            and creating real digital products for real users.
+            </p>
+            <button class="button">Start Register</button>
+          </section>
+          <figure class="intro__wrap-image">
+            <img class="intro__img" src="./images/hero-decor.png" alt="" width="531" height="570">
+          </figure>
+        </div>
+      </div>
+    </aside>
+
     <section class="about">
       <figure class="about__wrap-img">
         <img class="about__img" src="./images/about-decore.png" alt="" width="670" height="386">

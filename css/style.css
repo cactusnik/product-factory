@@ -1,4 +1,4 @@
-/* || Font Face */
+/* || FONT FACE */
 
 @font-face {
   font-family: 'myProductSans';
@@ -14,4 +14,185 @@
         url("./font/ProductSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+}
+
+/* || GENERAL STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font: 400 19px/1.15 'myProductSans', Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, p {
+  margin-top: 0;
+}
+
+.container {
+  width: 1490px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* || VARIABLES */
+
+:root {
+  --orange: #f46632;
+}
+
+/* || HEADER */
+
+.header {
+  background-color: #111111;
+}
+
+.header .header__container {
+  display: flex;
+  align-items: center;
+  height: 159px;
+}
+
+.header .header__wrap-logo {
+  width: 123px;
+  height: 52px;
+  margin-right: 52px;
+}
+
+.header .header__button {
+  padding: 13px 41px;
+  margin-left: auto;
+  border: 0;
+  border-radius: 26px;
+  background-color: #282828;
+  color: #fff;
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+  cursor: pointer;
+}
+
+.header .header__button:hover {
+  background-color: var(--orange)
+}
+
+/* || SITEWIDE */
+
+.nav { }
+
+.nav .nav__list {
+  display: flex;
+}
+
+.nav .nav__item:not(:last-child) {
+  margin-right: 65px;
+}
+
+.nav .nav__link {
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.nav .nav__link:hover {
+  color: var(--orange);
+}
+
+.button {
+  padding: 20px 119px;
+  border: 0;
+  border-radius: 16px;
+
+  background-color: var(--orange);
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 3.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #282828;
+}
+
+/* || INTRO */
+
+.intro {
+  position: relative;
+  margin-bottom: 290px;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 167px;
+  background-color: #111111;
+  z-index: -1;
+}
+
+.intro .intro__container {
+  display: flex;
+  align-items: center;
+
+  padding: 109px 133px;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 50px 50px 99px rgba(34, 34, 34, 0.06);
+}
+
+.intro .intro__content {
+  flex: 5.65;
+  margin-right: 6,7123%;
+}
+
+.intro .intro__hgroup {
+  position: relative;
+}
+
+.intro .intro__hgroup::before {
+  content: url("../images/intro-decor.png");
+  position: absolute;
+  top: 73px;
+  left: 0;
+}
+
+.intro .intro__wrap-image {
+  flex: 5.31;
+}
+
+.intro .intro__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.intro .intro__title {
+  margin-bottom: 99px;
+  color: #8d8d8d;
+  font-size: 3.8rem;
+}
+
+.intro .intro__subtitle {
+  margin-bottom: 19px;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.intro .intro__description {
+  margin-bottom: 70px;
+  font-size: 2.3rem;
+  line-height: 5.5rem;
 }
