@@ -324,10 +324,16 @@ h1, h2, h3, h4, p {
 
 .conference .conference__leads {
   flex: 0 0 322px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .conference .conference__lead-wrap-img {
   margin: 0;
+}
+
+.conference .conference__lead-wrap-img:not(:first-child) {
+  margin-left: 24px;
 }
 
 .conference .conference__description {
@@ -449,6 +455,7 @@ h1, h2, h3, h4, p {
 /* || EXPERIENCE */
 .experience {
   position: relative;
+  margin-bottom: 138px;
 }
 
 .experience::after {
@@ -480,7 +487,19 @@ h1, h2, h3, h4, p {
 
 /* || SESSIONS */
 
-.sessions {}
+.sessions {
+    margin-bottom: 193px;
+}
+
+.sessions .sessions__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sessions .sessions__title {
+  margin-bottom: 125px;
+}
 
 .sessions  .sessions__list {
   position: relative;
