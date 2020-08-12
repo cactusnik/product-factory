@@ -140,9 +140,10 @@ h1, h2, h3, h4, p {
   top: 50%;
   left: 50%;
 
-
   color: #000;
   font-size: 3.2rem;
+  white-space: nowrap;
+
   transform: translate(-50%, -50%);
 }
 
@@ -156,6 +157,10 @@ h1, h2, h3, h4, p {
 
 .title.title__sessions::after {
   content: 'Sessions';
+}
+
+.title.title__faq::after {
+  content: 'Frequently Asked Questions';
 }
 
 .socials { }
@@ -629,7 +634,9 @@ h1, h2, h3, h4, p {
 
 /* || MASTERS */
 
-.masters {}
+.masters {
+    position: relative;
+}
 
 .masters .masters__container {
   display: flex;
@@ -651,4 +658,94 @@ h1, h2, h3, h4, p {
   grid-row-gap: 62px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 100%;
+}
+
+/* || FAQ */
+
+.faq {
+  margin-top: -430px;
+  padding-top: 587px;
+  padding-bottom: 630px;
+
+  background-color: #fafafa;
+}
+
+.faq .faq__title {
+  margin: 0 auto 32px;
+}
+
+.faq .faq__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.faq .faq__list {
+  width: 100%;
+}
+
+.faq .faq__item:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.faq .faq__summary {
+  position: relative;
+  display:  flex;
+  align-items: center;
+
+  height: 88px;
+  border-radius: 26px;
+  background-color: #fff;
+  box-shadow: 10px 10px 99px rgba(211, 211, 211, 0.16);
+
+  list-style: none;
+  font-size: 2.1rem;
+  line-height: 3.3rem;
+
+  cursor: pointer;
+}
+
+.faq .faq__summary::after,
+.faq .faq__summary::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  display: block;
+
+  width: 20px;
+  height: 3px;
+  border-radius: 1px;
+
+  background-color: #000;
+
+  transition: all .2s ease-out;
+}
+
+.faq .faq__summary::after {
+  transform: rotate(90deg);
+}
+
+.faq .faq__summary:focus {
+  outline: none;
+}
+
+.faq .faq__summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq .faq__details {
+  padding: 0 64px;
+  background-color: #fff;
+}
+
+.faq .faq__details[open] .faq__summary::after {
+  transform: rotate(0);
+}
+
+.faq .faq__description {
+  padding-bottom: 30px;
+
+  font-size: 1.6rem;
+  line-height: 3.4rem;
 }
