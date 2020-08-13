@@ -126,6 +126,13 @@ h1, h2, h3, h4, p {
   background-color: #282828;
 }
 
+.button.button_price {
+  padding: 14px 67px;
+  border-radius: 12px;
+
+  font-style: 1.6rem;
+}
+
 .title {
   position: relative;
   display: inline-block;
@@ -151,16 +158,24 @@ h1, h2, h3, h4, p {
   content: 'About us';
 }
 
-.title.title__experience::after {
+.title.title_experience::after {
   content: 'Course Experience';
 }
 
-.title.title__sessions::after {
+.title.title_sessions::after {
   content: 'Sessions';
 }
 
-.title.title__faq::after {
-  content: 'Frequently Asked Questions';
+.title.title_masters::after {
+  content: "Masters";
+}
+
+.title.title_faq::after {
+  content: "Frequently Asked Questions";
+}
+
+.title.title_fee::after {
+  content: "Course fee";
 }
 
 .socials { }
@@ -433,6 +448,57 @@ h1, h2, h3, h4, p {
 .master .master__position{
   font-size: 1.8rem;
   white-space: nowrap;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 50px;
+  border-radius: 25px;
+
+  background-color: #000;
+
+  color: #fff;
+}
+
+.price .price__old {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  font-size: 2.5rem;
+  text-decoration: line-through;
+}
+
+.price .price__old span {
+  margin-left: 2px;
+
+  font-size: 1.9rem;
+}
+
+.price .price__current {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 38px;
+
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+
+.price .price__current span {
+  margin-left: 12px;
+
+  font-size: 2.5rem;
+}
+
+.price .price__possibility {
+  margin-bottom: 37px;
+
+  font-size: 1.6rem;
 }
 
 /* || INTRO */
@@ -748,4 +814,89 @@ h1, h2, h3, h4, p {
 
   font-size: 1.6rem;
   line-height: 3.4rem;
+}
+
+/* || FEE */
+
+.fee {
+  margin-top: -435px;
+}
+
+.fee .fee__container {
+  display: grid;
+  grid-template-columns: 1fr 474px;
+  grid-template-rows: auto;
+  grid-column-gap: 75px;
+
+  padding: 45px 106px 48px 110px;
+  border-radius: 30px;
+
+  background-color: #fff;
+  box-shadow: 50px 50px 99px rgba(44, 44, 44, 0.06);
+}
+
+.fee .fee__title {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  margin: 0 auto 71px;
+}
+
+.fee .fee__achievements {
+  grid-column: 1 / 2;
+  grid-row: 2;
+
+  margin: 0;
+}
+
+.fee .fee__price {
+  grid-column: 2 / 3;
+  grid-row: 2;
+}
+
+.fee .fee__subtitle {
+  margin-bottom: 51px;
+
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.fee .fee__item {
+  position: relative;
+
+  padding-left: 51px;
+
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.fee .fee__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  display: block;
+  width: 27px;
+  height: 27px;
+
+  background: url("../images/icons/check-success.png") left center no-repeat;
+}
+
+.fee .fee__item:not(:last-child) {
+  margin-bottom: 51px;
+}
+
+.fee .fee__footer {
+  grid-column: 1 / 3;
+  grid-row: 3;
+
+  margin: 64px auto 0;
+  padding-top: 51px;
+  border-top: 1px solid #ebebeb;
+}
+
+.fee .fee__possibility {
+  font-size: 1.8rem;
+
+  opacity: .49;
 }
