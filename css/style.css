@@ -820,6 +820,7 @@ h1, h2, h3, h4, p {
 
 .fee {
   margin-top: -435px;
+  margin-bottom: 199px;
 }
 
 .fee .fee__container {
@@ -899,4 +900,67 @@ h1, h2, h3, h4, p {
   font-size: 1.8rem;
 
   opacity: .49;
+}
+
+/* || SUBSCRIPTION */
+
+.subscription {
+  padding-top: 133px;
+  padding-bottom: 117px;
+
+  background-color: #000;
+
+  background: url("../images/subscription-bg.png") right 105px top -32px no-repeat, #000;
+
+  color: #fff;
+}
+
+.subscription .subscription__content {
+  max-width: 720px;
+}
+
+.subscription .subscription__title {
+  margin-bottom: 32px;
+
+  font-size: 3.4rem;
+  fotn-weight: 700;
+}
+
+.subscription .subscription__description {
+  display: inline-block;
+  margin-bottom: 47px;
+
+  font-size: 2rem;
+  line-height: 4rem;
+  font-style: normal;
+}
+
+.subscription .subscription__input {
+  width: 558px;
+  margin-bottom: 61px;
+  padding: 17px 40px;
+  border: 0;
+  border-radius: 16px;
+
+  background-color: rgba(255, 255, 255, 0.15);
+
+  color: #e5e5e5;
+  font-size: 2.2rem;
+  line-height: 2.9rem;
+  letter-spacing: 1.1px;
+}
+
+.subscription .subscription__input:focus {
+  border: 0;
+  outline-color: var(--orange);
+}
+
+.subscription .subscription__form-status {
+  padding-left: 43px;
+
+  background: url("../images/icons/check-success.png") left 0 top 10px no-repeat;
+
+  color: #acacac;
+  font-size: 2rem;
+  line-height: 4rem;
 }
